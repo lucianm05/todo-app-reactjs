@@ -1,0 +1,28 @@
+@import '../../../styles/_config.scss';
+
+.todo-list {
+  display: block;
+  width: 100%;
+  border: 2px solid $color1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  & li:nth-of-type(1) {
+    border-top: none;
+  }
+
+  & li:nth-last-of-type(1) {
+    border-bottom: none;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+    border-top: 1px solid $color1;
+    border-bottom: 1px solid $color1;
+    font-size: clamp(1.3rem, 3vw, 2.1rem);
+    line-height: 1.5em;
+  }
+}

@@ -1,0 +1,2 @@
+.todo-list{display:block;width:100%;border:2px solid #61dbfb;border-bottom-left-radius:10px;border-bottom-right-radius:10px}.todo-list li:nth-of-type(1){border-top:none}.todo-list li:nth-last-of-type(1){border-bottom:none}.todo-list__item{display:flex;flex-direction:column;justify-content:center;padding:8px;border-top:1px solid #61dbfb;border-bottom:1px solid #61dbfb;font-size:clamp(1.3rem, 3vw, 2.1rem);line-height:1.5em}
+/*# sourceMappingURL=todo-list.module.css.map */

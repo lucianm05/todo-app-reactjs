@@ -1,0 +1,14 @@
+@import '../../../styles/_config.scss';
+
+.todo-section {
+  display: block;
+  width: 100%;
+  margin: 16px 0;
+}
+
+.todo-container {
+  display: block;
+  width: 95%;
+  max-width: $lg;
+  margin: 48px auto;
+}

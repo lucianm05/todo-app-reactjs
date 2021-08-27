@@ -1,6 +1,11 @@
+import Home from './components/homepage/home';
+
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
+      <main>
+        <Home />
+      </main>
     </div>
   );
 }

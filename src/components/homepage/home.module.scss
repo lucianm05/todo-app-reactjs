@@ -1,0 +1,9 @@
+@import '../../styles/_config.scss';
+
+h1 {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.5em;
+}

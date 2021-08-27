@@ -1,0 +1,62 @@
+@import '../../../styles/_config.scss';
+
+.todo-add__form {
+  display: flex;
+  width: 100%;
+  padding: 8px;
+  background-color: $color1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  &-fieldset {
+    display: block;
+    border: none;
+    width: 100%;
+  }
+
+  &-input {
+    display: inline-block;
+    width: 95%;
+    padding: 8px 4px;
+    border-radius: 10px;
+    border: 1px solid $color1;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+
+  &-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    & svg {
+      pointer-events: none;
+      width: 32px;
+      height: 32px;
+    }
+
+    @media (min-width: $md) {
+      & svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    @media (min-width: $xxl) {
+      & svg {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+
+  @media (min-width: $md) {
+    padding: 16px 12px;
+  }
+}

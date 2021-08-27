@@ -1,0 +1,92 @@
+@import '../../../styles/_config.scss';
+
+.todo-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px;
+  border-top: 1px solid $color1;
+  border-bottom: 1px solid $color1;
+  font-size: clamp(1.3rem, 3vw, 2.1rem);
+  line-height: 1.5em;
+
+  &-status {
+    display: flex;
+    align-items: center;
+    font-size: clamp(0.8rem, 3vw, 1.5rem);
+    border-bottom: 2px solid $color3;
+    padding: 0.3em 0;
+    font-weight: 500;
+
+    & svg {
+      width: 24px;
+      height: 24px;
+      margin: 0 8px;
+    }
+
+    @media (min-width: $md) {
+      & svg {
+        width: 32px;
+        height: 32px;
+        margin: 0 12px;
+      }
+    }
+
+    @media (min-width: $xxl) {
+      & svg {
+        width: 40px;
+        height: 40px;
+        margin: 0 16px;
+      }
+    }
+  }
+
+  .progress {
+    color: $color3;
+  }
+
+  .finished {
+    color: $color4;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: clamp(1.3rem, 3vw, 2.1rem);
+    line-height: 1.5em;
+    padding: 0.5em 0;
+    font-weight: 500;
+  }
+
+  &-actions {
+    display: flex;
+    margin-left: 16px;
+
+    & button {
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      width: 32px;
+      height: 32px;
+      margin: 0 4px;
+
+      & svg {
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+      }
+
+      @media (min-width: $md) {
+        width: 40px;
+        height: 40px;
+      }
+
+      @media (min-width: $xxl) {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+}
