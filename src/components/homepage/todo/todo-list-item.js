@@ -15,7 +15,6 @@ const TodoItem = ({ id, text, status }) => {
   };
 
   const deleteTodo = (todoId) => {
-    console.log(todos);
     dispatch(todosActions.delete({ id: todoId }));
   };
 
