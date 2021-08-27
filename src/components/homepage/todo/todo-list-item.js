@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 import classes from '../../../styles/todo-list-item.module.css';
 import IconCheckmark from '../../ui/icons/icon-checkmark';
