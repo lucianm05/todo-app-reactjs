@@ -8,7 +8,6 @@ import { todosActions } from '../../../store/todo';
 
 const TodoItem = ({ id, text, status }) => {
   const dispatch = useDispatch();
-  const todos = useSelector((state) => state.todos.todos);
 
   const changeTodoStatus = (todoId, status) => {
     dispatch(todosActions.changeStatus({ id: todoId, status: status }));
